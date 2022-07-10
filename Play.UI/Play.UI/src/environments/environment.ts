@@ -4,13 +4,15 @@
 
 import { Environment } from "./environment.inteface";
 
-const localhost = 'https://localhost';
+const localhost = 'http://localhost';
+const secureLocalhost = 'https://localhost';
+
 export const environment: Environment = {
   production: false,
   config: {
     endpoints: {
-      catalogServiceUrl: `${ localhost }:5001`,
-      inventoryServiceUrl: `${ localhost }:5005`,
+      catalogServiceUrl: `${ secureLocalhost }:5001`,
+      inventoryServiceUrl: `${ secureLocalhost }:5005`,
       rabbitMqUrl: `${ localhost }:15672`
     }
   }
