@@ -2,8 +2,18 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+import { Environment } from "./environment.inteface";
+
+const localhost = 'https://localhost';
+export const environment: Environment = {
+  production: false,
+  config: {
+    endpoints: {
+      catalogServiceUrl: `${ localhost }:5001`,
+      inventoryServiceUrl: `${ localhost }:5005`,
+      rabbitMqUrl: `${ localhost }:15672`
+    }
+  }
 };
 
 /*
