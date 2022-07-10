@@ -1,4 +1,4 @@
 import { InjectionToken } from "@angular/core";
-import { environment } from "src/environments/environment";
+import { IEnvConfig } from "src/environments/environment.inteface";
 
-export const ENV_CONFIG = new InjectionToken<typeof environment.config>('envConfig');
+export const ENV_CONFIG = new InjectionToken<IEnvConfig>('envConfig');

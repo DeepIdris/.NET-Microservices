@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    margin: 50px 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &-title {
+        font-size: xx-large;
+    }
+
+    &-options {
+        display: flex;
+        gap: 40px;
+        font-size: x-large;
+    }
+
+    &-link {
+
+    }
+}
+
+  

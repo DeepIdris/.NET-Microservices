@@ -1,0 +1,1 @@
+export * from './catalog-list/catalog-list.component';
